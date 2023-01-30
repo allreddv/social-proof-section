@@ -35,7 +35,7 @@ body {
     height: auto;
     background-color: white;
     padding: 8.2rem 2.4rem 9.9rem 2.4rem;
-    margin: 5rem;
+    /* margin: 5rem; */
     background-image: url(./images/bg-pattern-top-mobile.svg);
     background-repeat: no-repeat;
 
@@ -160,8 +160,8 @@ li h4 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        width: 144rem;
-        height: auto;
+        /* width: 144rem; */
+        min-height: 100vh;
         background-color: white;
         padding: 8.2rem 2.4rem 9.9rem 2.4rem;
         padding: 11.8rem 16.5rem 10rem;
