@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Magenta);
+   
+
+}
+
+.main__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 37.5rem;
+    height: auto;
+    background-color: white;
+    padding: 8.2rem 2.4rem 9.9rem 2.4rem;
+    margin: 5rem;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+
+}
+.header__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 3.9rem;
+}
+
+.testimonials__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 4rem;
+    line-height: 3.2rem;
+    letter-spacing: -.143rem;
+    font-weight: 700;
+    margin-bottom: 1.7rem;
+
+}
+
+.info__header {
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.063rem;
+    font-weight: 500;
+    padding-inline: 1rem;
+}
+
+.ratings__container {
+    gap: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+  
+}
+
+.ratings__list {
+    background-color: var(--Light-Grayish-Magenta);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2.56rem;
+    width: 32.7rem;
+    height: 7.8rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-radius: 1rem;
+    /* align-items: center; */
+   
+}
+
+.testimonials__list {
+    color: white;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.testimonial {
+    background-color: var(--Very-Dark-Magenta);
+    width: 32.7rem;
+    height: 24.8rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 4rem 3.2rem 3.5rem;
+}
+
+.testimonial__header {
+    display: flex;
+    align-items: center;
+}
+
+.profile__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.name__container {
+    margin-left: 2.3rem ;
+}
+
+.name {
+    font-size: 1.7rem;
+}
+
+li h4 {
+    color: var(--Soft-Pink);
+    font-size: 1.7rem;
+}
+
+.quote {
+    font-size: 1.7rem ;
+    margin-top: 2.3rem;
+    line-height: 2.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .main__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        width: 144rem;
+        height: auto;
+        background-color: white;
+        padding: 8.2rem 2.4rem 9.9rem 2.4rem;
+        padding: 11.8rem 16.5rem 10rem;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, bottom right;
+      
+    }
+
+    .header__container {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+    .testimonials__container {
+        flex-direction: row;
+        height: 26.6rem;
+        width: 111rem;
+        align-items: start;
+        margin-top: 3rem;
+      
+
+    }
+    
+    .testimonials__list {
+        flex-direction: row;
+        gap: 3rem;
+    
+     
+    }
+
+    .ratings__container {
+        width: 54rem;
+    }
+
+    .ratings__list {
+        width: 44.5rem;
+        height: 5.6rem;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 3.2rem;
+    }
+
+    .stars {
+        margin-right: 3.25rem;
+    }
+
+    .title  {
+        width: 44.5rem;
+        height: 24.5rem;
+    }
+
+    h1 {
+        font-size: 5.6rem;
+        line-height: 4.8rem;
+        font-weight: 700;
+        letter-spacing: -.2rem;
+    }
+    .info__header {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        letter-spacing: -0.063rem;
+        text-align: start;
+        padding-left: 0;
+    }
+
+   .rating2 {
+    margin-left: 5rem;
+  
+   }
+
+   .rating3 {
+    margin-left: 10rem ;
+   }
+
+   .testimonial {
+    /* width: 100%; */
+    width: 35rem;
+    height: 23.4rem;
+   }
+
+   .test2 {
+    margin-top: 3rem;
+   }
+
+   .test3 {
+    margin-top: 6rem;
+   }
+}
